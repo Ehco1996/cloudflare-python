@@ -198,7 +198,7 @@ Connection errors (for example, due to a network connectivity problem), 408 Requ
 You can use the `max_retries` option to configure or disable retry settings:
 
 ```python
-from cloudflare import Cloudflare
+from cloudflare import Client
 
 # Configure the default for all requests:
 client = Cloudflare(
@@ -218,7 +218,7 @@ By default requests time out after 1 minute. You can configure this with a `time
 which accepts a float or an [`httpx.Timeout`](https://www.python-httpx.org/advanced/#fine-tuning-the-configuration) object:
 
 ```python
-from cloudflare import Cloudflare
+from cloudflare import Client
 
 # Configure the default for all requests:
 client = Cloudflare(
